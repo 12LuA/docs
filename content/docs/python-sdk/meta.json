@@ -1,0 +1,5 @@
+{
+  "title": "python-sdk",
+  "description": "A simple API wrapper for topstats.gg written in Python.",
+  "root": true
+}
