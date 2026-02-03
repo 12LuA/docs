@@ -20,7 +20,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       <body className='flex flex-col min-h-screen'>
         <RootProvider>
           {children}
-          <div className='background-gradient' />
+          <div className='background-gradient bg-background text-foreground' />
         </RootProvider>
       </body>
     </html>

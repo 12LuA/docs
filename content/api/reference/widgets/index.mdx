@@ -7,6 +7,14 @@ description: Display bot or custom data with our widgets
 
 import { Card, Cards } from 'fumadocs-ui/components/card'
 import { BotIcon, ImageIcon } from 'lucide-react'
+import {
+  Combobox,
+  ComboboxContent,
+  ComboboxEmpty,
+  ComboboxInput,
+  ComboboxItem,
+  ComboboxList,
+} from "@/components/ui/combobox"
 
 <Callout type={'info'} title={'Widget documentation is still work in progress'}>
   Expect more detailed documentation and guides to be available soon!
@@ -24,3 +32,19 @@ import { BotIcon, ImageIcon } from 'lucide-react'
     Display your own kind of data with our custom widgets!
   </Card>
 </Cards>
+
+---
+
+<Combobox items={["Next.js", "SvelteKit", "Nuxt.js", "Remix", "Astro"]}>
+  <ComboboxInput placeholder="Select a framework" />
+  <ComboboxContent>
+    <ComboboxEmpty>No items found.</ComboboxEmpty>
+    <ComboboxList>
+      <ComboboxItem value="Next.js">Next.js</ComboboxItem>
+      <ComboboxItem value="SvelteKit">SvelteKit</ComboboxItem>
+      <ComboboxItem value="Nuxt.js">Nuxt.js</ComboboxItem>
+      <ComboboxItem value="Remix">Remix</ComboboxItem>
+      <ComboboxItem value="Astro">Astro</ComboboxItem>
+    </ComboboxList>
+  </ComboboxContent>
+</Combobox>
